@@ -1,0 +1,44 @@
+[
+  {
+   "id": "1161",
+   "name": "Melbourne",
+   "countrycode": "61",
+   "district": "Victoria",
+   "population": "7m"
+  },
+  {
+   "id": "1361",
+   "name": "Sydney",
+   "countrycode": "61",
+   "district": "NSW",
+   "population": "10m"
+  },
+  {
+   "id": "1561",
+   "name": "Brisbane",
+   "countrycode": "61",
+   "district": "Queensland",
+   "population": "4m"
+  },
+  {
+   "id": "1661",
+   "name": "Delhi",
+   "countrycode": "91",
+   "district": "NewDelhi",
+   "population": "50m"
+  },
+  {
+   "id": "1761",
+   "name": "Auckland",
+   "countrycode": "67",
+   "district": "NZD1",
+   "population": "1m"
+  },
+  {
+   "id": "1961",
+   "name": "London",
+   "countrycode": "44",
+   "district": "GBD1",
+   "population": "15m"
+  }
+]
