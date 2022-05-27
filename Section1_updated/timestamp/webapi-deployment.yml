@@ -1,0 +1,21 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: timestamp-app
+  labels:
+    app: timestamp-app
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: timestamp-app
+  template:
+    metadata:
+      labels:
+        app: timestamp-app
+    spec:
+      containers:
+      - name: timestamp-app
+        image: hemanthtestacr.azurecr.io/timestamprepo/timestamp-api:latest
+        ports:
+        - containerPort: 8002

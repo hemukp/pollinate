@@ -1,0 +1,10 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: timestamp-db-config
+  labels:
+    app: timestamp-db
+data:
+  POSTGRES_DB: timestamp
+  POSTGRES_USER: postgres
+  POSTGRES_PASSWORD: postgrespwd
