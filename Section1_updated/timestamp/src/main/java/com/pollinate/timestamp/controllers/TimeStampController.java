@@ -20,13 +20,13 @@ import com.pollinate.timestamp.services.TimestampService;
 public class TimeStampController{
 	@Autowired
 	TimestampService timestampservice;
-	
+	//API GET call definition
 	@GetMapping("/api/all")
 	private List getallTimeStamps() {
 		return timestampservice.findAll();
 		
 	}
-	
+	//API POST call definition
 	@PostMapping("/api/timestamp")
 	private ResponseEntity createTimeStamp(@RequestBody timestamp timestampvar) {
 		try {
@@ -38,7 +38,7 @@ public class TimeStampController{
 		}
 		return new ResponseEntity("Time Stamp added " + timestampvar.timestampvalue, HttpStatus.CREATED);
 	}
-	
+	//Function to retrieve the current date time
 	public Timestamp GetCurrentTimeStamp() {
 		Long datetime = System.currentTimeMillis();
 		Timestamp currenttimestamp = new Timestamp(datetime);
