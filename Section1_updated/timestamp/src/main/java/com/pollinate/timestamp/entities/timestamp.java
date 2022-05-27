@@ -1,7 +1,5 @@
 package com.pollinate.timestamp.entities;
 
-
-
 import java.io.Serializable;
 import java.sql.Timestamp;
 
